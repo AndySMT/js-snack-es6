@@ -43,5 +43,35 @@ console.log(
 const teams = [
   {
     team: "Milan",
+    point: 0,
+    foul: 0,
+  },
+  {
+    team: "Barca",
+    point: 0,
+    foul: 0,
+  },
+  {
+    team: "Bayern",
+    point: 0,
+    foul: 0,
+  },
+  {
+    team: "Psg",
+    point: 0,
+    foul: 0,
   },
 ];
+
+for (let i = 0; i < teams.length; i++) {
+  teams[i].point = randomNumber(1, 20);
+  teams[i].foul = randomNumber(1, 3);
+}
+console.log(teams);
+
+let teamFoults = [];
+for (let i = 0; i < teams.length; i++) {
+  teamFoults.push(teams[i].team);
+  teamFoults.push(teams[i].foul);
+}
+console.log(teamFoults);
