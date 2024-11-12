@@ -16,11 +16,11 @@ const bikes = [
   },
   {
     brand: "bianchi",
-    weight: 132,
+    weight: 1322,
   },
   {
     brand: "cannondale",
-    weight: 1221,
+    weight: 121,
   },
   {
     brand: "trek",
@@ -35,6 +35,9 @@ for (let i = 0; i < bikes.length; i++) {
   }
 }
 console.log(lightestBike);
+console.log(
+  `La bicicletta piu leggera e' la: ${lightestBike.brand} e il stuo peso e' di ${lightestBike.weight} kg`
+);
 
 // Snack 2
 const teams = [
