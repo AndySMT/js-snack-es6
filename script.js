@@ -1,13 +1,3 @@
-/* Snack2
-Creare un array di oggetti di squadre di calcio.
-Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
-Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
-Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
-Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-Snack 3 (Bonus)
-Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
-La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri. */
-
 // Snack 1
 const bikes = [
   {
@@ -75,3 +65,17 @@ for (let i = 0; i < teams.length; i++) {
   teamFoults.push(teams[i].foul);
 }
 console.log(teamFoults);
+
+// Snack 3
+
+const numBetween = [];
+const a = 2;
+const b = 12;
+
+let newArray = (a, b) => {
+  for (let i = a; i <= b; i++) {
+    numBetween.push(i);
+  }
+  return numBetween;
+};
+console.log(newArray(a, b));
